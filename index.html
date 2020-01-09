@@ -32,7 +32,8 @@ window.location.replace("https://www.youtube.com/"); }, 5000); -->
   <script>
     window.onload = function() {
     <!-- Deep link URL for existing users with app already installed on their device -->
-        window.location = 'sharesample://story/1234';
+      intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;  
+//       window.location = 'sharesample://story/1234';
     <!-- Download URL (TUNE link) for new users to download the app -->
         setTimeout("window.location = 'https://www.youtube.com/';", 1000);
     }
