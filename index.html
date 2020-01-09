@@ -15,8 +15,9 @@
   <meta property="og:title" content="example page title" />
 <!--   <meta property="og:type" content="website" /> -->
   <meta property="al:web:should_fallback" content="false" />
-  
-  "intent://scan/#Intent;scheme=sharesample://story/1234;package=com.qortoba.quran.link;end;"
+ 
+  res.set('Location', 'intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;');
+  res.status(307).end();
   
 <!--   <meta property="al:web:url" content="http://applinks.org/documentation" /> -->
   
