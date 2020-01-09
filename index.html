@@ -16,8 +16,8 @@
 <!--   <meta property="og:type" content="website" /> -->
   <meta property="al:web:should_fallback" content="false" />
  
-  res.set('Location', 'intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;');
-  res.status(307).end();
+<!--   res.set('Location', 'intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;');
+  res.status(307).end(); -->
   
 <!--   <meta property="al:web:url" content="http://applinks.org/documentation" /> -->
   
@@ -27,7 +27,16 @@ window.location.replace("sharesample://story/1234"); setTimeout(function () {
 
 window.location.replace("https://www.youtube.com/"); }, 5000); -->
 
-</script>
+<!-- </script> -->
+  
+  <script>
+    window.onload = function() {
+    <!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'sharesample://story/1234';
+    <!-- Download URL (TUNE link) for new users to download the app -->
+        setTimeout("window.location = 'http://hastrk.com/serve?action=click&publisher_id=1&site_id=2';", 1000);
+    }
+    </script>
 
 </head>
 
