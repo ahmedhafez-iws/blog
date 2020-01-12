@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <meta name="description" content="The HEADER">
   <meta name="author" content="SitePoint">
   
   <meta property="al:android:url" content="sharesample://story/1234">
@@ -20,14 +20,14 @@
 <script>
     window.onload = function() {
 //         window.location = "intent://open/#Intent;scheme=sharesample://story/123;package=com.qortoba.quran.link;end";
-      document.getElementById("qwe").click();
+      setTimeout(function(){ document.getElementById("qwe").click(); }, 1000);
     }
     </script>
 
 </head>
 
 <body>
-  <h1>HELLO WORLD NEW NEW</h1>
+  <h1>HELLO WORLD</h1>
   <a id="qwe" href="intent://open/#Intent;scheme=sharesample://story/123;package=com.qortoba.quran.link;end"> Take a QR code </a>
 </body>
 </html>
