@@ -21,23 +21,24 @@
   
 <!--   <meta property="al:web:url" content="http://applinks.org/documentation" /> -->
   
-<!--   <script>
-
-window.location.replace("sharesample://story/1234"); setTimeout(function () {
-
-window.location.replace("https://www.youtube.com/"); }, 5000); -->
-
-<!-- </script> -->
-  
-  <script>
+<script>
     window.onload = function() {
     <!-- Deep link URL for existing users with app already installed on their device -->
-      intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;  
-//       window.location = 'sharesample://story/1234';
+        window.location = 'sharesample://story/123';
     <!-- Download URL (TUNE link) for new users to download the app -->
-        setTimeout("window.location = 'https://www.youtube.com/';", 1000);
+        setTimeout("window.location = 'http://hastrk.com/serve?action=click&publisher_id=1&site_id=2';", 1000);
     }
     </script>
+  
+<!--   <script>
+    window.onload = function() {
+    <!-- Deep link URL for existing users with app already installed on their device -->
+<!--       intent://open?link_click_id=123456#Intent;scheme=sharesample;package=com.qortoba.quran.link;   -->
+<!-- //       window.location = 'sharesample://story/1234'; -->
+    <!-- Download URL (TUNE link) for new users to download the app -->
+<!--         setTimeout("window.location = 'https://www.youtube.com/';", 1000); -->
+    }
+    </script> -->
 
 </head>
 
